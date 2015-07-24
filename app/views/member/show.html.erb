@@ -5,8 +5,212 @@
     <div class="alert alert-success"><%= flash[:success] %></div>
   <% elsif flash[:danger] %>
       <div class="alert alert-danger"><%= flash[:danger] %></div>
-  <%end %> 
-    <div>
-        <h2>Welcome!</h2>
+  <%end %>
+
+    <div class="row">
+      <div class="col-md-2">
+        <img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" />
+      </div>
+      <div class="col-md-4">
+        <h2 style="margin-top: 0; text-transform: capitalize"><%= current_user.first_name %></h2>
+        <p>Lives in Cebu City Philippines</p>
+        <span>100k friends | 23k views</span>
+        <p></p>
+      </div>
+      <div class="col-md-6" >
+        <div style="display:table; height: 150px">
+            <blockquote>Look at the sparrows; they do not know what they will do in the next moment. Let us literally live from moment to moment.</blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-md-12">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Activities</a>
+          </li>
+          <li>
+            <a href="#">Photos</a>
+          </li>
+          <li>
+            <a href="#">Reviews</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-md-6">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Basic Information
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-3"><span class="prof-label">Looking for</span></div>
+              <div class="col-md-9">Skowars</div>
+            </div>
+            <div class="row prof-top-pad">
+              <div class="col-md-3"><span class="prof-label">Gender</span></div>
+              <div class="col-md-9">Male</div>
+            </div>
+            <div class="row prof-top-pad">
+              <div class="col-md-3"><span class="prof-label">Relationship</span></div>
+              <div class="col-md-9">Seeing anyone</div>
+            </div>
+            <div class="row prof-top-pad">
+              <div class="col-md-3"><span class="prof-label">Birthday</span></div>
+              <div class="col-md-9">April 18, 1987</div>
+            </div>
+            <div style="margin-top: 18px;"></div>
+            <i title="Edit" class="fa fa-pencil-square-o prof-edit"></i>
+          </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Interests
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-inline">
+              <li class="label label-default interest">Party</li>
+              <li class="label label-default interest">Dogs</li>
+              <li class="label label-default interest">Girls</li>
+              <li class="label label-default interest">Travelling</li>
+              <li class="label label-default interest">Beer</li>
+              <li class="label label-default interest">Programming</li>
+              <li class="label label-default interest">Sports</li>
+              <li class="label label-default interest">Community service</li>
+            </ul>
+            <i title="Edit" class="fa fa-pencil-square-o prof-edit"></i>
+          </div>
+        </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Contact Information
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-3"><span class="prof-label">Mobile</span></div>
+              <div class="col-md-9">+63 912354553</div>
+            </div>
+            <div class="row prof-top-pad">
+              <div class="col-md-3"><span class="prof-label">Email</span></div>
+              <div class="col-md-9">xmen@marvel.net</div>
+            </div>
+            <div class="row prof-top-pad">
+              <div class="col-md-3"><span class="prof-label">Skype</span></div>
+              <div class="col-md-9">wazlo143</div>
+            </div>
+            <div class="row prof-top-pad">
+              <div class="col-md-3"><span class="prof-label">Facebook</span></div>
+              <div class="col-md-9">www.facebook.com/koncen</div>
+            </div>
+            <div style="margin-top: 18px;"></div>
+            <i title="Edit" class="fa fa-pencil-square-o prof-edit"></i>
+          </div>
+        </div>
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Pending requests
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-inline">
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+            </ul>
+            <div style="margin-top: 18px;"></div>
+            <i title="View all" class="fa fa-search"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Recently added friends
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-inline">
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+            </ul>
+            <div style="margin-top: 18px;"></div>
+            <i title="View all" class="fa fa-search"></i>
+          </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              My Recent Sponsors
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-inline">
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+            </ul>
+            <div style="margin-top: 18px;"></div>
+            <i title="View all" class="fa fa-search"></i>
+          </div>
+        </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              My Recent Skowars
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-inline">
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+              <li class="prof-thumb"><img alt="Profile pic" src="http://lorempixel.com/140/140/" class="img-thumbnail" /></li>
+            </ul>
+            <div style="margin-top: 18px;"></div>
+            <i title="View all" class="fa fa-search"></i>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
